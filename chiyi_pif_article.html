@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PIF完備，責任同行 — 奇異生技股份有限公司</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b2a;
+    --deep-blue: #1a2e45;
+    --mid-blue: #1e4976;
+    --accent: #2d7dd2;
+    --gold: #c8a96e;
+    --gold-light: #e8d5a3;
+    --cream: #f8f4ee;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #3d4a5c;
+    --text-light: #8899aa;
+    --border: rgba(200,169,110,0.3);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--text-dark);
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+    padding: 100px 40px 80px;
+    text-align: center;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 50%, rgba(45,125,210,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 30%, rgba(200,169,110,0.12) 0%, transparent 60%);
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(200,169,110,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(200,169,110,0.06) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    margin-bottom: 36px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .hero-company {
+    color: rgba(200,169,110,0.8);
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(32px, 5vw, 58px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.3;
+    position: relative;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 em {
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  .hero-sub {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(16px, 2.5vw, 22px);
+    color: rgba(255,255,255,0.65);
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+  }
+
+  .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .hero-meta-item {
+    text-align: center;
+  }
+
+  .hero-meta-item .num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 38px;
+    color: var(--gold);
+    display: block;
+    line-height: 1;
+  }
+
+  .hero-meta-item .label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 2px;
+    margin-top: 6px;
+  }
+
+  .hero-divider {
+    width: 1px;
+    height: 50px;
+    background: rgba(200,169,110,0.3);
+    align-self: center;
+  }
+
+  /* ── INTRO ── */
+  .intro-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 40px 60px;
+    text-align: center;
+  }
+
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .intro-section p {
+    font-size: 17px;
+    color: var(--text-mid);
+    line-height: 2;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 300;
+  }
+
+  .intro-section p strong {
+    color: var(--text-dark);
+    font-weight: 600;
+  }
+
+  /* ── GOLD DIVIDER ── */
+  .gold-rule {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .gold-rule::before,
+  .gold-rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+
+  .gold-rule span {
+    color: var(--gold);
+    font-size: 18px;
+  }
+
+  /* ── BACKGROUND BLOCKS ── */
+  .bg-dark {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  .bg-mid {
+    background: var(--deep-blue);
+    color: var(--white);
+  }
+
+  /* ── THREE SHIELDS ── */
+  .shields-section {
+    background: var(--deep-blue);
+    padding: 80px 40px;
+  }
+
+  .shields-section .section-title {
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(24px, 4vw, 38px);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .shields-section .section-title em {
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  .shields-section .section-sub {
+    text-align: center;
+    color: rgba(255,255,255,0.55);
+    font-size: 14px;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+  }
+
+  .shields-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .shield-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,110,0.2);
+    border-radius: 4px;
+    padding: 40px 32px;
+    position: relative;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .shield-card:hover {
+    border-color: rgba(200,169,110,0.6);
+    transform: translateY(-4px);
+  }
+
+  .shield-number {
+    font-family: 'DM Serif Display', serif;
+    font-size: 72px;
+    color: rgba(200,169,110,0.15);
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    line-height: 1;
+  }
+
+  .shield-icon {
+    width: 52px;
+    height: 52px;
+    background: linear-gradient(135deg, var(--gold), #9e7d47);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 22px;
+  }
+
+  .shield-card h3 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .shield-card .shield-tagline {
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .shield-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .shield-card ul li {
+    font-size: 14px;
+    color: rgba(255,255,255,0.72);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.7;
+  }
+
+  .shield-card ul li:last-child {
+    border-bottom: none;
+  }
+
+  .shield-card ul li::before {
+    content: '▸';
+    color: var(--gold);
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+  }
+
+  /* ── WHY PIF MATTERS ── */
+  .pif-section {
+    padding: 80px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .pif-section .section-title {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+  }
+
+  .pif-section .section-title em {
+    color: var(--accent);
+    font-style: normal;
+  }
+
+  .pif-section .lead {
+    font-size: 16px;
+    color: var(--text-mid);
+    margin-bottom: 50px;
+    max-width: 680px;
+    line-height: 1.9;
+  }
+
+  .pif-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  @media (max-width: 680px) {
+    .pif-columns { grid-template-columns: 1fr; }
+    .shields-grid { grid-template-columns: 1fr; }
+    .hero-divider { display: none; }
+  }
+
+  .pif-block {
+    padding: 32px;
+    border-left: 3px solid var(--gold);
+    background: rgba(45,125,210,0.04);
+  }
+
+  .pif-block h4 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .pif-block p {
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 1.9;
+  }
+
+  /* ── PRICE INTEGRITY ── */
+  .price-section {
+    background: var(--navy);
+    padding: 80px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .price-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,169,110,0.08) 0%, transparent 70%);
+  }
+
+  .price-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  @media (max-width: 680px) {
+    .price-inner { grid-template-columns: 1fr; }
+  }
+
+  .price-text .section-label { margin-bottom: 16px; }
+
+  .price-text h2 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+
+  .price-text h2 em {
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  .price-text p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    line-height: 2;
+    margin-bottom: 32px;
+  }
+
+  .price-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pill {
+    background: rgba(200,169,110,0.12);
+    border: 1px solid rgba(200,169,110,0.35);
+    color: var(--gold-light);
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+  }
+
+  .price-callout {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,110,0.25);
+    padding: 40px;
+    border-radius: 4px;
+  }
+
+  .price-callout h3 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .price-callout .rule-item {
+    display: flex;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    align-items: flex-start;
+  }
+
+  .price-callout .rule-item:last-child {
+    border-bottom: none;
+  }
+
+  .rule-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(200,169,110,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 13px;
+    margin-top: 2px;
+  }
+
+  .rule-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.78);
+    line-height: 1.7;
+  }
+
+  /* ── CONTRACT SECTION ── */
+  .contract-section {
+    padding: 80px 40px;
+    background: var(--cream);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .contract-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 680px) {
+    .contract-header { grid-template-columns: 1fr; }
+  }
+
+  .contract-header h2 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.4;
+  }
+
+  .contract-header h2 em {
+    color: var(--accent);
+    font-style: normal;
+  }
+
+  .contract-header p {
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 2;
+    align-self: center;
+  }
+
+  .contract-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 680px) {
+    .contract-cards { grid-template-columns: 1fr; }
+  }
+
+  .contract-card {
+    background: var(--white);
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    border-top: 3px solid var(--accent);
+  }
+
+  .contract-card .cc-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    color: rgba(45,125,210,0.12);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .contract-card h4 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+  }
+
+  .contract-card p {
+    font-size: 13px;
+    color: var(--text-mid);
+    line-height: 1.8;
+  }
+
+  /* ── WARNING BLOCK ── */
+  .warning-section {
+    background: #f0f4f8;
+    border-left: 4px solid #c0392b;
+    padding: 40px 50px;
+    max-width: 900px;
+    margin: 0 auto 0;
+  }
+
+  .warning-section h3 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+    color: #c0392b;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
+  .warning-section p {
+    font-size: 14px;
+    color: var(--text-mid);
+    line-height: 2;
+  }
+
+  /* ── CTA ── */
+  .cta-section {
+    background: linear-gradient(135deg, var(--mid-blue) 0%, var(--navy) 100%);
+    padding: 80px 40px;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(24px, 4vw, 40px);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+
+  .cta-section h2 em {
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  .cta-section p {
+    color: rgba(255,255,255,0.65);
+    font-size: 16px;
+    max-width: 580px;
+    margin: 0 auto 40px;
+    line-height: 1.9;
+  }
+
+  .cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.2s;
+  }
+
+  .btn-primary:hover { opacity: 0.85; }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--white);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border: 1px solid rgba(255,255,255,0.4);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: border-color 0.2s;
+  }
+
+  .btn-outline:hover { border-color: rgba(255,255,255,0.8); }
+
+  /* ── FOOTER NOTE ── */
+  .footer-note {
+    background: var(--navy);
+    text-align: center;
+    padding: 30px 40px;
+    border-top: 1px solid rgba(200,169,110,0.15);
+  }
+
+  .footer-note p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 1px;
+  }
+
+  .footer-note strong {
+    color: rgba(200,169,110,0.7);
+  }
+
+  /* ── QUOTE ── */
+  .quote-block {
+    border: 1px solid var(--border);
+    background: rgba(200,169,110,0.04);
+    padding: 40px 50px;
+    max-width: 700px;
+    margin: 60px auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .quote-block::before {
+    content: '"';
+    font-family: 'DM Serif Display', serif;
+    font-size: 120px;
+    color: rgba(200,169,110,0.15);
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    line-height: 1;
+  }
+
+  .quote-block p {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    color: var(--text-dark);
+    line-height: 1.8;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .quote-block .quote-author {
+    font-size: 12px;
+    color: var(--text-light);
+    letter-spacing: 2px;
+    margin-top: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  /* Section container */
+  .section-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <p class="hero-company">CHIYI BIO — 奇異生技股份有限公司</p>
+  <div class="hero-tag">給所有合作夥伴的一封信</div>
+  <h1>PIF完備，<em>責任同行</em></h1>
+  <p class="hero-sub">奇異生技的品牌合規承諾與市場保護聲明</p>
+
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <span class="num">28</span>
+      <div class="label">年髮肌保健專研</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <span class="num">SA</span>
+      <div class="label">雙項專業認證</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <span class="num">PIF</span>
+      <div class="label">全品項完整建置</div>
+    </div>
+    <div class="hero-divider"></div>
+    <div class="hero-meta-item">
+      <span class="num">0</span>
+      <div class="label">非授權通路容忍度</div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro-section">
+  <span class="section-label">Why This Matters</span>
+  <p>
+    在這個追求精緻養護與法規透明化的時代，<strong>市場上已出現未經授權的低價流通</strong>——來路不明的產品不只傷害消費者，更稀釋了每一位認真經營的合作夥伴的商業價值。<br><br>
+    奇異生技始終將「<strong>產品安全</strong>」與「<strong>合作夥伴的經營安全</strong>」視為同等重要的事，決定以本文正式說明我們的立場與承諾。
+  </p>
+</section>
+
+<div class="gold-rule"><span>✦</span></div>
+
+<!-- QUOTE -->
+<div class="quote-block">
+  <p>真正的守護，是走在法規的前頭。<br>真正的專業，是讓您安心專注於服務與創造價值。</p>
+  <div class="quote-author">— 奇異生技 研發技術總監 林雪雅</div>
+</div>
+
+<!-- THREE SHIELDS -->
+<section class="shields-section">
+  <div class="section-wrap">
+    <h2 class="section-title">守護您的<em>三大品牌防盾</em></h2>
+    <p class="section-sub">繁複的法規責任由總部全面承擔，落實以下三大承諾</p>
+
+    <div class="shields-grid">
+
+      <div class="shield-card">
+        <div class="shield-number">01</div>
+        <div class="shield-icon">🛡️</div>
+        <h3>安全之盾</h3>
+        <div class="shield-tagline">SA 專家簽署審查</div>
+        <ul>
+          <li>旗下每一款產品，在到達您手上前，皆須通過化妝品安全評估人員（SA）的專業審查與簽署</li>
+          <li>依據歐盟法規（EC）No 1223/2009 協助建立完整 PIF，保障上市前的合規性</li>
+          <li>這不只是一份證書，更是我們對產品使用安全的最高致敬</li>
+          <li>所有產品投保國泰產品責任險 3,000 萬，消費糾紛由公司承擔</li>
+        </ul>
+      </div>
+
+      <div class="shield-card">
+        <div class="shield-number">02</div>
+        <div class="shield-icon">📋</div>
+        <h3>合規之盾</h3>
+        <div class="shield-tagline">完備的 PIF 檔案與產品登錄</div>
+        <ul>
+          <li>迎合最新《化粧品衛生安全管理法》，奇異生技已主動為所有銷售產品建立「產品資訊檔案（PIF）」</li>
+          <li>所有產品於主管機關系統完成合法登錄，檔案均由本公司依法完善保存備查</li>
+          <li>您不需承擔繁瑣的建檔壓力，合規責任由我們一肩扛起</li>
+          <li>通過 SGS 國際實驗室四大認證，細胞毒性與皮膚刺激試驗均安全無虞</li>
+        </ul>
+      </div>
+
+      <div class="shield-card">
+        <div class="shield-number">03</div>
+        <div class="shield-icon">🤝</div>
+        <h3>責任之盾</h3>
+        <div class="shield-tagline">直核時的法定對接與協助</div>
+        <ul>
+          <li>我們是您合法經營的窗口，未來若主管機關進行任何例行性法規查核，請您放心</li>
+          <li>奇異生技將第一時間依法全力配合，並提供必要的法規協助</li>
+          <li>您是我們授權的合法銷售夥伴，我們對您的市場權益全力護航</li>
+          <li>讓您在推廣美麗事業時，毫無後顧之憂</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY PIF -->
+<section style="background: var(--cream); padding: 80px 40px;">
+  <div class="pif-section" style="padding: 0; margin: 0 auto;">
+    <span class="section-label" style="display:block; margin-bottom:16px;">法規背景</span>
+    <h2 class="section-title">為什麼 <em>PIF 完備</em> 不是選項，是義務？</h2>
+    <p class="lead">台灣《化粧品衛生安全管理法》已參酌歐盟及東協法規，全面推行產品資訊檔案（PIF）建置制度。這不只是法律要求，更是保護消費者、保護夥伴、保護品牌的第一道防線。</p>
+
+    <div class="pif-columns">
+      <div class="pif-block">
+        <h4>📌 法規要求層面</h4>
+        <p>依據化粧品衛生安全管理法，所有化粧品業者須於上市前完成 PIF 建置並於主管機關登錄。未登錄商品即屬違規，銷售方、進口方、製造方皆可能連帶受罰。</p>
+      </div>
+
+      <div class="pif-block">
+        <h4>📌 消費者保障層面</h4>
+        <p>PIF 完備代表產品有完整的成分風險評估、安全邊際計算（MoS）及臨床測試支持，消費者可放心使用，並享有完整的售後責任保障。</p>
+      </div>
+
+      <div class="pif-block">
+        <h4>📌 品牌聲譽層面</h4>
+        <p>非正統通路的流通商品因無法追溯 PIF 狀態，主管機關查核時不僅無法背書，也讓消費者陷入安全疑慮，最終損害的是所有合作夥伴共同建立的品牌信任。</p>
+      </div>
+
+      <div class="pif-block">
+        <h4>📌 合作夥伴保護層面</h4>
+        <p>所有奇異生技授權通路商，皆有完整 PIF 檔案作為法律後盾。面對客訴、查核或競爭，您都站在最有利的合規位置，無需獨自面對法規風險。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE INTEGRITY -->
+<section class="price-section">
+  <div class="price-inner">
+    <div class="price-text">
+      <span class="section-label">市場秩序聲明</span>
+      <h2>不削價，<em>維護每一位夥伴</em>的市場尊嚴</h2>
+      <p>
+        近期發現有人在網路拍賣平台以低於市場的削價方式販售奇異生技商品。這些商品的真實性、安全性及 PIF 登錄狀態均無法確認。<br><br>
+        本公司鄭重聲明：<strong>奇異生技所有產品，一律不進行削價行為</strong>，所有配合通路商，全屬經簽訂合作同意書的正式夥伴。
+      </p>
+      <div class="price-pills">
+        <span class="pill">✓ 統一市場定價</span>
+        <span class="pill">✓ 簽約授權通路</span>
+        <span class="pill">✓ 非授權拒絕背書</span>
+        <span class="pill">✓ 維護品牌價值</span>
+      </div>
+    </div>
+
+    <div class="price-callout">
+      <h3>市場保護三原則</h3>
+
+      <div class="rule-item">
+        <div class="rule-icon">01</div>
+        <div class="rule-text"><strong style="color:#e8d5a3;">銷售通路全授權制。</strong>所有合作通路商均須簽訂正式合作同意書，未簽約者不具銷售授權。</div>
+      </div>
+
+      <div class="rule-item">
+        <div class="rule-icon">02</div>
+        <div class="rule-text"><strong style="color:#e8d5a3;">價格機制共同維護。</strong>為保障所有夥伴的市場利益，公司商品無任何削價行為，違規者不屬本公司體系。</div>
+      </div>
+
+      <div class="rule-item">
+        <div class="rule-icon">03</div>
+        <div class="rule-text"><strong style="color:#e8d5a3;">非正統通路不予背書。</strong>水貨、平行輸入或網路來源不明之私售商品，本公司無法為其 PIF 狀態及品質完整性負責，相關法律責任由持有或販售個體戶自行承擔。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WARNING -->
+<section style="padding: 60px 40px; background: #fef7f6; max-width: 100%;">
+  <div class="warning-section" style="margin: 0 auto;">
+    <h3>⚠ 關於非正統通路的風險提醒</h3>
+    <p>
+      若產品非經由奇異生技股份有限公司正式銷售、出貨（包含水貨、平行輸入、網路上來源不明之私售商品），本公司將無法為其產品之登錄狀態及 PIF 檔案完整性背書。因非正統通路所衍生的法規風險與法律責任，需由持有或販售該商品的個體戶自行承擔。<br><br>
+      購買網路拍賣中的商品，有無來路不明及品質是否缺乏保障等問題，為了顧及廣大消費者之權益，<strong>千萬勿貪一時便宜而得不償失。</strong>
+    </p>
+  </div>
+</section>
+
+<!-- CONTRACT -->
+<section style="background: var(--cream); padding: 80px 40px;">
+  <div class="contract-section" style="padding: 0; margin: 0 auto;">
+    <div class="contract-header">
+      <h2>簽署<em>合作同意書</em>，<br>是我們共同保護市場的方式</h2>
+      <p>這份文件代表我們之間基於信任、透明與互利的正式夥伴關係。每一位簽約夥伴，都是奇異生技市場秩序的共同守護者，也是我們全力支持的對象。</p>
+    </div>
+
+    <div class="contract-cards">
+      <div class="contract-card">
+        <div class="cc-num">01</div>
+        <h4>授權保障</h4>
+        <p>簽約後您即為奇異生技正式授權通路商，銷售行為受公司完整法規背書保護。</p>
+      </div>
+
+      <div class="contract-card">
+        <div class="cc-num">02</div>
+        <h4>PIF 完整支援</h4>
+        <p>所有在售產品均有完整的 PIF 檔案及主管機關登錄，面對查核時公司第一時間協助對接。</p>
+      </div>
+
+      <div class="contract-card">
+        <div class="cc-num">03</div>
+        <h4>市場秩序共守</h4>
+        <p>簽約夥伴共同維護統一定價，公司承諾無削價、不破壞市場機制，讓您安心經營。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>與奇異生技，<em>穩健前行</em></h2>
+  <p>感謝您的信任。未來我們將持續以嚴謹的態度，與您攜手建立更具價值的品牌新典範。讓我們一起在合規的基礎上，走得更遠、更穩、更好。</p>
+
+  <div class="cta-buttons">
+    <a href="tel:0800-313-000" class="btn-primary">📞 聯繫奇異生技</a>
+    <a href="#" class="btn-outline">了解合作詳情</a>
+  </div>
+
+  <p style="margin-top: 40px; font-size: 12px; color: rgba(255,255,255,0.3); letter-spacing: 1px;">
+    高雄總公司：高雄市前金區七賢二路122號11樓-2　｜　TEL: 07-2872098　｜　免付費電話: 0800-313-000
+  </p>
+</section>
+
+<div class="footer-note">
+  <p>
+    <strong>奇異生技股份有限公司</strong> &nbsp;|&nbsp; 發文字號：行字第 108004 號 &nbsp;|&nbsp; 
+    康悅實驗室「源於科學，萃於生活」&nbsp;|&nbsp; © 2024 CHIYI BIOTECH CO., LTD.
+  </p>
+</div>
+
+</body>
+</html>
